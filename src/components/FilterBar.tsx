@@ -107,6 +107,7 @@ export default function FilterPage({
         // fontWeight: 600,
 
         color: '#303030',
+        cursor:'pointer',
         
       }}
     >
@@ -153,6 +154,7 @@ export default function FilterPage({
         color: '#303030',
         width: rem(72),
         height: rem(22),
+        cursor:'pointer',
       }}
     >
       Find Jobs
@@ -196,6 +198,7 @@ export default function FilterPage({
         color: '#303030',
         width: rem(88),
         height: rem(22),
+        cursor:'pointer',
       }}
     >
       Find Talents
@@ -239,6 +242,7 @@ export default function FilterPage({
         color: '#303030',
         width: rem(65),
         height: rem(22),
+        cursor:'pointer',
       }}
     >
       About Us
@@ -282,6 +286,7 @@ export default function FilterPage({
         color: '#303030',
         width: rem(90),
         height: rem(22),
+        cursor:'pointer',
       }}
     >
       Testimonials
