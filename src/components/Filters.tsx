@@ -1,4 +1,4 @@
-import { TextInput, Select, RangeSlider, Group, Divider, Text, rem, Flex } from '@mantine/core';
+import { TextInput, Select, RangeSlider, Divider, Text, rem, Flex } from '@mantine/core';
 import { IconSearch, IconMapPin, IconUser } from '@tabler/icons-react';
 
 export default function JobFilterBar() {

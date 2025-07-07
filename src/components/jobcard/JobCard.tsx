@@ -7,7 +7,6 @@ import {
   Image,
   Group,
   Stack,
-  Badge,
   rem,
 } from '@mantine/core';
 import { BiUserPlus } from "react-icons/bi";

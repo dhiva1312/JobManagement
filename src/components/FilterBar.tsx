@@ -1,5 +1,5 @@
-import { Box, rem, Group,Anchor, Button } from "@mantine/core";
-import logo from '../../public/logo.png';
+import { Box, rem } from "@mantine/core";
+// import logo from '../../public/logo.png';
 import { useState } from "react";
 import CreateJobModal from "./ModalForm";
 import JobFilterBox from "../components/Filters"
