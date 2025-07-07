@@ -80,7 +80,7 @@ export default function CreateJobModal({ opened, onClose, onAddjob }: Props) {
             width: '848px',
             height: '779px',
             position: 'absolute',
-            top: '117px',
+            top: '80px',
             left: '426px',
             borderRadius: '16px',
             opacity: 1,
