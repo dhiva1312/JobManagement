@@ -2,7 +2,6 @@
 
 import { Box, SimpleGrid, rem } from '@mantine/core';
 import JobCard from './JobCard';
-
 type Job = {
   logo: string;
   jobTitle: string;

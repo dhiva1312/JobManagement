@@ -3,7 +3,13 @@ import { Box, rem } from "@mantine/core";
 import { useState } from "react";
 import CreateJobModal from "./ModalForm";
 import JobFilterBox from "../components/Filters"
-export default function FilterPage({onAddjob}:{onAddjob :(job:any)=> void}){
+import { Job } from '../app/page'
+
+export default function FilterPage({
+  onAddjob,
+}: {
+  onAddjob: (job: Job) => void;
+}){
     const [modalOpen, setModalOpen] = useState(false);
     return (
         <Box w={rem(1440)} h={rem(214)} mx="auto" style={{

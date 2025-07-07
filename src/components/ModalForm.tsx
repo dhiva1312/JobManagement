@@ -17,30 +17,44 @@ import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { useForm, Controller } from 'react-hook-form';
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { Job } from '../app/page';
+type FormValues = {
+  Jobtitle: string;
+  companyName: string;
+  location: string;
+  jobType: string;
+  minSalary: string;
+  maxSalary: string;
+  deadline: Date | null;
+  jobDescription: string;
+};
 
 type Props = {
   opened: boolean;
   onClose: () => void;
-onAddjob: (job: any) => void;
+  onAddjob: (job: Job) => void;
 };
 
 export default function CreateJobModal({ opened, onClose, onAddjob }: Props) {
-  const { register, handleSubmit, reset, control } = useForm();
+  const { register, handleSubmit, reset, control } = useForm<FormValues>();
 
-  const onsubmit = (data: any) => {
-    const newJob = {
-      logo: './amazon.png', 
-      jobTitle: data.Jobtitle,
-      experience: '1-3 yr Exp', 
-      location: data.location,
-      salary: `₹${data.minSalary} - ₹${data.maxSalary}`,
-      badgeText: 'Just Now',
-    };
-    console.log("new job added",newJob)
-    onAddjob(newJob)
-    onClose();
-    reset();
+
+  const onsubmit = (data: FormValues) => {
+  const newJob: Job = {
+    logo: './amazon.png',
+    jobTitle: data.Jobtitle,
+    experience: '1-3 yr Exp',
+    location: data.location,
+    salary: `₹${data.minSalary} - ₹${data.maxSalary}`,
+    badgeText: 'Just Now',
+    title: ''
   };
+
+  console.log("new job added", newJob);
+  onAddjob(newJob);
+  onClose();
+  reset();
+};
 
   return (
     <Modal

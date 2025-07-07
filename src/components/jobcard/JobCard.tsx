@@ -27,7 +27,6 @@ export default function JobCard({
   experience,
   location,
   salary,
-  badgeText,
 }: JobCardProps) {
   return (
     <Box
